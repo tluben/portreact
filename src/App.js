@@ -10,8 +10,17 @@ import projects from "./data/portfolio.json"
 
 class App extends React.Component {
 state = {
-  projects: projects
+  projects: projects,
+  listView: false, 
 }
+
+isListView(listView){
+    if(listView === true){
+      return true 
+    } 
+    return false
+}
+
   render() {
     return (
       <Router>
@@ -19,7 +28,7 @@ state = {
           <NavTabs />
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/portfolio" component={()=><Portfolio projects={this.state.projects}/>} />
+          <Route exact path="/portfolio" component={()=><Portfolio projects={this.state.projects} listView={this.state.listView} isListView={this.isListView()}/>} />
           <Route path="/contact" component={Contact} />
         </div>
       </Router>
