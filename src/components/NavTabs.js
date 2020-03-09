@@ -32,23 +32,7 @@ function NavTabs() {
         >
           Portfolio
         </Link>
-      </li>     
-      <li className="nav-item">
-        <Link
-          to="/portfolio"
-          className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}
-        >
-          Linkedin  
-        </Link>
-      </li> 
-      <li className="nav-item">
-        <Link
-          to="/portfolio"
-          className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}
-        >
-          GitHub
-        </Link>
-      </li> 
+      </li>
     </ul>
   );
 }
