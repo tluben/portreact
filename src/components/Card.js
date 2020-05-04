@@ -18,8 +18,10 @@ const img ={
 
 const card_title ={
     textAlign: "center",
-    //borderRadius: 0px 0px 40px 40px;
-
+    borderTopLeftRadius:"0px",
+    borderTopRightRadius:"0px",
+    borderBottomLeftRadius:"40px",
+    borderBottomRightRadius:"40px",
     fontFamily: "sans-serif",
     fontWeight: "bold",
     fontSize: "30px",
